@@ -1,0 +1,71 @@
+\documentclass[12pt,unicode]{beamer}
+\usetheme{Luebeck}
+\useoutertheme{infolines}
+\usepackage{luatexja}
+
+% link commands
+\newcommand{\link}[1]{\href{#1}{\textcolor{blue}{\underline{#1}}}}
+\newcommand{\Link}[2]{\href{#2}{\textcolor{blue}{\underline{#1}}}}
+
+\title{Template}
+\author{\textcolor{normal text.bg}{bowcalm}}
+\date{\today}
+
+\begin{document}
+  \begin{frame}
+    \maketitle
+  \end{frame}
+
+  \section{Block Section}
+  \subsection{normal}
+  \begin{frame}{frame title}{frame subtitle}
+    \begin{block}{normal block}
+      \begin{itemize}
+        \item normal item
+        \item \structure{structure item}
+        \item \alert{alert item}
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+  \subsection{alert}
+  \begin{frame}{frame title (no subtitle)}
+    \begin{alertblock}{alert block}
+      \begin{itemize}
+        \item normal item
+        \item \structure{structure item}
+        \item \alert{alert item}
+      \end{itemize}
+    \end{alertblock}
+  \end{frame}
+
+  \subsection{example}
+  \begin{frame}{frame title}{frame subtitle}
+    \begin{exampleblock}{example block}
+      \begin{itemize}
+        \item normal item
+        \item \structure{structure item}
+        \item \alert{alert item}
+      \end{itemize}
+    \end{exampleblock}
+  \end{frame}
+
+  \section{Accessories Section}
+  \subsection{buttons}
+  \begin{frame}{Beamer buttons}
+    \begin{itemize}
+        \item \beamerbutton{beamerbutton}
+        \item \beamergotobutton{beamergotobutton}
+        \item \beamerskipbutton{beamerskipbutton}
+        \item \beamerreturnbutton{beamerreturnbutton}
+    \end{itemize}
+  \end{frame}
+
+  \subsection{commands}
+  \begin{frame}{Custom commands}
+    \begin{itemize}
+        \item \link{https://github.com/bowcalm/beamertheme-nightcalm}
+        \item \Link{HyperLink}{https://github.com/bowcalm/beamertheme-nightcalm}
+    \end{itemize}
+  \end{frame}
+\end{document}
