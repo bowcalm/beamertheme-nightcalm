@@ -1,0 +1,263 @@
+% cheat-sheet: http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+\mode<presentation>
+
+% custom color
+\definecolor{calmBlue}{RGB}{171, 205, 239}
+\definecolor{nightBlue}{RGB}{18, 52, 86}
+\definecolor{bowcalmBlack}{RGB}{8, 8, 8}
+\definecolor{bowcalmWhite}{RGB}{247, 247, 247}
+
+% ===== Beamer's Colors from here ===== %
+
+% --- Structure of the presentation --- %
+
+%% Color palettes
+\setbeamercolor*{palette primary}{
+  use = structure,
+  fg  = nightBlue!90!bowcalmWhite,
+  bg  = calmBlue!10!bowcalmWhite
+}
+\setbeamercolor*{palette secondary}{
+  use = structure,
+  fg  = bowcalmWhite,
+  bg  = nightBlue!70!calmBlue
+}
+\setbeamercolor*{palette tertiary}{
+  use = structure,
+  fg  = bowcalmWhite,
+  bg  = nightBlue
+}
+\setbeamercolor*{palette quaternary}{
+  use = structure,
+  fg  = bowcalmWhite,
+  bg  = nightBlue
+}
+\setbeamercolor*{palette sidebar primary}{
+  use = structure,
+  fg  = nightBlue!80!bowcalmWhite,
+  bg  = calmBlue!20!bowcalmWhite
+}
+\setbeamercolor*{palette sidebar secondary}{
+  use = structure,
+  fg  = nightBlue,
+  bg  = bowcalmWhite
+}
+\setbeamercolor{palette sidebar tertiary}{}
+\setbeamercolor{palette sidebar quaternary}{}
+
+%% Global definitions
+\setbeamercolor*{normal text}{
+  fg = bowcalmBlack,
+  bg = white
+}
+\setbeamercolor*{titlelike}{
+  use = structure,
+  fg  = nightBlue,
+  bg  = bowcalmWhite
+}
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+%% Title page
+\setbeamercolor*{title page}{
+  fg = nightBlue!50!bowcalmBlack,
+  bg = nightBlue!50!bowcalmWhite
+}
+\setbeamercolor*{titlelike}{}
+\setbeamercolor*{title}{}
+\setbeamercolor*{subtitle}{}
+\setbeamercolor*{author}{}
+\setbeamercolor*{institute}{}
+\setbeamercolor*{date}{}
+
+%% Part, section, subsection pages
+\setbeamercolor{part page}{}
+\setbeamercolor{section page}{}
+\setbeamercolor{subsection page}{}
+
+%% Table of contents
+\setbeamercolor{section in toc}{}
+\setbeamercolor{subsection in toc}{}
+\setbeamercolor{subsubsection in toc}{}
+\setbeamercolor{section in toc shaded}{}
+\setbeamercolor{subsection in toc shaded}{}
+\setbeamercolor{subsubsection in toc shaded}{}
+\setbeamercolor{section number projected}{}
+
+%% Bibliography
+\setbeamercolor{bibliography entry author}{}
+\setbeamercolor{bibliography entry title}{}
+\setbeamercolor{bibliography entry location}{}
+\setbeamercolor{bibliography entry note}{}
+\setbeamercolor{bibliography item}{}
+
+%% Note page
+\setbeamercolor{note page}{}
+
+% --- Structure of a frame --- %
+
+%% Background
+\setbeamercolor{background canvas}{
+  bg = white
+}
+  \setbeamercolor{background}{}
+
+%% Headlines and footlines
+\setbeamercolor{headline}{}
+\setbeamercolor{footline}{}
+\setbeamercolor{page number in head/foot}{
+  fg = nightBlue!50!calmBlue,
+}
+\setbeamercolor{separation line}{}
+  \setbeamercolor{upper separation line head}{}
+  \setbeamercolor{middle separation line head}{}
+  \setbeamercolor{lower separation line head}{}
+  \setbeamercolor{upper separation line foot}{}
+  \setbeamercolor{middle separation line foot}{}
+  \setbeamercolor{lower separation line foot}{}
+\setbeamercolor{author in head/foot}{}
+\setbeamercolor{title in head/foot}{}
+\setbeamercolor{date in head/foot}{}
+\setbeamercolor{institute in head/foot}{}
+
+%% Sidebars
+\setbeamercolor{sidebar}{}
+  \setbeamercolor{sidebar left}{}
+  \setbeamercolor{sidebar right}{}
+\setbeamercolor{section in sidebar}{}
+\setbeamercolor{section in sidebar shaded}{}
+\setbeamercolor{subsection in sidebar}{}
+\setbeamercolor{subsubsection in sidebar}{}
+\setbeamercolor{title in sidebar}{}
+\setbeamercolor{author in sidebar}{}
+
+%% Navigation bars
+\setbeamercolor{mini frame}{}
+\setbeamercolor{section in head/foot}{}
+\setbeamercolor{subsection in head/foot}{}
+\setbeamercolor{subsubsection in head/foot}{}
+
+%% Navigation symbols
+\setbeamercolor{navigation symbols}{}
+
+%% Logo
+\setbeamercolor{logo}{}
+
+% --- Elements of a frame --- %
+
+%% Frame title
+\setbeamercolor*{frametitle}{
+  fg = nightBlue,
+  bg = bowcalmWhite
+}
+\setbeamercolor{frametitle right}{}
+\setbeamercolor*{framesubtitle}{
+  fg = nightBlue!80!bowcalmWhite,
+  bg = bowcalmWhite
+}
+\setbeamercolor{frametitle continuation}{}
+\setbeamercolor{titlelike}{}
+
+%% Abstract
+\setbeamercolor{abstract}{}
+\setbeamercolor{abstract title}{}
+
+%% Hyperlinks and buttons
+\setbeamercolor{button}{
+  fg = calmBlue!30!bowcalmWhite,
+  bg = nightBlue!80!bowcalmBlack
+}
+\setbeamercolor{button border}{
+  fg = bowcalmWhite
+}
+
+%% Lists
+\setbeamercolor{itemize item}{}
+\setbeamercolor{itemize subitem}{}
+\setbeamercolor{itemize subsubitem}{}
+\setbeamercolor{enumerate item}{}
+\setbeamercolor{enumerate subitem}{}
+\setbeamercolor{enumerate subsubitem}{}
+\setbeamercolor{enumerate mini template}{}
+\setbeamercolor{description item}{}
+\setbeamercolor{item}{}
+  \setbeamercolor{item projected}{}
+    \setbeamercolor{subitem projected}{}
+      \setbeamercolor{subsubitem projected}{}
+  \setbeamercolor{subitem}{}
+    \setbeamercolor{subsubitem}{}
+
+%% Highlighting
+\setbeamercolor*{structure}{
+  fg = nightBlue,
+  bg = nightBlue!20!bowcalmWhite
+}
+\setbeamercolor{local structure}{}
+\setbeamercolor*{alerted text}{
+  fg = red!85!nightBlue,
+  bg = red
+}
+
+%% Blocks environments
+\setbeamercolor{block title}{
+  use = structure,
+  fg  = bowcalmWhite,
+  bg  = nightBlue
+}
+\setbeamercolor{block body}{
+  use = block title,
+  fg  = bowcalmBlack,
+  bg  = calmBlue!10!bowcalmWhite
+}
+\setbeamercolor{block title alerted}{
+  use = alerted text,
+  fg  = bowcalmWhite,
+  bg  = red!75!nightBlue
+}
+\setbeamercolor{block body alerted}{
+  use = block title alerted,
+  fg  = bowcalmBlack,
+  bg  = block title alerted.bg!10!bowcalmWhite
+}
+\setbeamercolor*{example text}{
+  fg = green!85!nightBlue,
+  bg = green
+}
+\setbeamercolor{block title example}{
+  use = example text,
+  fg  = bowcalmWhite,
+  bg  = green!55!nightBlue
+}
+\setbeamercolor{block body example}{
+  use = block title example,
+  fg  = bowcalmBlack,
+  bg  = block title example.bg!10!bowcalmWhite
+}
+
+%% Theorem environments
+\setbeamercolor{qed symbol}{}
+
+%% Figures and tables
+\setbeamercolor{caption}{}
+\setbeamercolor{caption name}{}
+
+%% Verse, quotations and quotes
+\setbeamercolor{verse}{}
+\setbeamercolor{quotation}{}
+\setbeamercolor{quote}{}
+
+%% Footnotes
+\setbeamercolor{footnote}{}
+\setbeamercolor{footnote mark}{}
+
+%% Mathematics
+\setbeamercolor{math text}{}
+  \setbeamercolor{math text inlined}{}
+  \setbeamercolor{math text displayed}{}
+\setbeamercolor{normal text in math text}{}
+
+% ===== Beamer's Colors to here ===== %
+
+\mode
+<all>
